@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    font-family: sans-serif;
+    justify-content: center;
+    color:#545454;
+    background-color: rgb(218, 45, 82);
+
+}
+
+.container{
+    background:rgb(218, 45, 82);;
+    margin:50px;
+    padding:50px;
+    border-radius: 35px;
+}
+
+.title{
+    text-align: center;
+}
+
+.title span {
+    color:#F2EBD3;
+}
+
+.status-action{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    margin:15px 50px 15px 50px;
+    height:30px;
+}
+
+.status span{
+    color:#F2EBD3;
+}
+
+.reset, .status{
+    cursor:pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.reset:hover, .status:hover{
+    color:white
+}
+
+.game-grid{
+    background:rgb(14, 5, 59);
+    display:grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:15px;
+    margin-top: 10px;
+    border: solid;
+    border-width: 13px;
+    border-color: rgba(3, 3, 65, 0.473);
+}
+
+.game-cell{
+    height: 200px;
+    cursor:pointer;
+    width: 200px;
+    background:rgb(62, 62, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.x::after{
+    content:'×';
+    font-size: 200px;
+}
+
+.o::after{
+    content:'o';
+    font-size: 190px;
+    margin: auto;
+    color:#F2EBD3;
+}
+
